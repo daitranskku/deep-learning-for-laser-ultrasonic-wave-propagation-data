@@ -1,10 +1,20 @@
-## ULTRASONIC WAVE PROPAGATION IMAGING (UWPI) FROM DEEP LEARNING PERSPECTIVE (Updated Nov 4 2020)
+## ULTRASONIC WAVE PROPAGATION IMAGING (UWPI) FROM DEEP LEARNING PERSPECTIVE (Updated Nov 5 2020)
 This repo contains all source code from UWPI processing to signal processing and deep learning applications.
+
+![System](figures/device.PNG)
+
+By using non-contact laser ultrasonic scanning system, the ultrasonic signal can be acquired for further procesisng.
 
 [UWPI processing](uwpi_processing.ipynb) script shows how to stack signals in to 3D frame for visualization.
 
-We can use B-SCOPE image to identify time when ultrasonic waves reach the edge or the bolted joint 
+We can use [B-SCOPE](b_scope.m) image to identify time when ultrasonic waves reach the edge or the bolted joint 
 ![B-scope](figures/b-scope.png)
+
+The raw signal is then preprocessed by using some signal processing algorithms as follows:
+
+![signal_processing_1](figures/signal_processing_1.PNG)
+
+The [.csv files](data_generation.m) are then created and preprocessed as an input for [CNN algorithms](cnn_applications.ipynb).
 
 The other source-code is processed to upload.
 ## Citation
